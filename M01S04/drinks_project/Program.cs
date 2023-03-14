@@ -33,9 +33,11 @@ while (showMenu)
             break;
         case 5:
             Repositorio.ListarSuco();
+            showMenu = Menu.ReiniciarDisplayConsole();
             break;
         case 6: 
             Repositorio.ListarRefrigerante();
+            showMenu = Menu.ReiniciarDisplayConsole();
             break;
         case 7:
             Console.WriteLine("Obridada, até a próxima!!");
@@ -95,5 +97,5 @@ var listaAntesExcluir = Repositorio.ListarBebida();
 Repositorio.ExcluirBebida(1);
 var listaAposExcluir = Repositorio.ListarBebida();
 
-Repositorio.ImprimirRefrigerante();
+Repositorio.ImprimirSuco();
 Repositorio.ImprimirRefrigerante();
